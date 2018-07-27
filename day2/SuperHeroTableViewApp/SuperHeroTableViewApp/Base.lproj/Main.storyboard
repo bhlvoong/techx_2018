@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WiC-dF-rfW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Superhero Table View Controller-->
+        <scene sceneID="Pb5-l9-c38">
+            <objects>
+                <tableViewController id="WiC-dF-rfW" customClass="SuperheroTableViewController" customModule="SuperHeroTableViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ygQ-co-Tph">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="id" rowHeight="226" id="Bc2-5q-42H" customClass="SuperheroCell" customModule="SuperHeroTableViewApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="226"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bc2-5q-42H" id="Eax-bh-rAn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Ou-bTv">
+                                            <rect key="frame" x="16" y="19" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="crM-1g-2I6"/>
+                                                <constraint firstAttribute="height" constant="80" id="zuk-op-sD0"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ct-S6-Dto">
+                                            <rect key="frame" x="112" y="19" width="231" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="s66-qK-BPr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgv-HC-RJL">
+                                            <rect key="frame" x="112" y="48" width="231" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="oWg-10-dqX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Hqn-Ou-bTv" firstAttribute="leading" secondItem="Eax-bh-rAn" secondAttribute="leadingMargin" id="0wS-EN-3Mh"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8ct-S6-Dto" secondAttribute="trailing" constant="16" id="ITw-r0-EAW"/>
+                                        <constraint firstItem="8ct-S6-Dto" firstAttribute="leading" secondItem="Hqn-Ou-bTv" secondAttribute="trailing" constant="16" id="U7l-OW-tae"/>
+                                        <constraint firstItem="Hqn-Ou-bTv" firstAttribute="top" secondItem="Eax-bh-rAn" secondAttribute="topMargin" constant="8" id="hHc-29-Zry"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Rgv-HC-RJL" secondAttribute="trailing" constant="16" id="iNo-O3-7eL"/>
+                                        <constraint firstItem="8ct-S6-Dto" firstAttribute="top" secondItem="Eax-bh-rAn" secondAttribute="topMargin" constant="8" id="ot8-20-sqy"/>
+                                        <constraint firstItem="Rgv-HC-RJL" firstAttribute="leading" secondItem="Hqn-Ou-bTv" secondAttribute="trailing" constant="16" id="q4r-te-wc9"/>
+                                        <constraint firstItem="Rgv-HC-RJL" firstAttribute="top" secondItem="8ct-S6-Dto" secondAttribute="bottom" constant="8" id="ukD-Ut-l0d"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="superheroImageView" destination="Hqn-Ou-bTv" id="Bg0-QR-9mV"/>
+                                    <outlet property="superheroNameLabel" destination="8ct-S6-Dto" id="pTF-Ev-kf7"/>
+                                    <outlet property="superheroPowersLabel" destination="Rgv-HC-RJL" id="Yn4-9Q-rmQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WiC-dF-rfW" id="0dX-41-g62"/>
+                            <outlet property="delegate" destination="WiC-dF-rfW" id="6PC-9r-Syr"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hu2-wk-vIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87.200000000000003" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+</document>
